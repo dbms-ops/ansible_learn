@@ -1,55 +1,120 @@
-2024-06-04 21:06:08,457 p=10941 u=lixun n=ansible | ERROR! Unexpected Exception, this is probably a bug: [Errno 21] Is a directory: '/Users/lixun/ansible'
-2024-06-04 21:06:08,458 p=10941 u=lixun n=ansible | to see the full traceback, use -vvv
-2024-06-04 21:06:08,459 p=10941 u=lixun n=ansible | the full traceback was:
 
-Traceback (most recent call last):
-  File "/opt/homebrew/Cellar/ansible/9.6.0/libexec/lib/python3.12/site-packages/ansible/cli/__init__.py", line 659, in cli_executor
-    exit_code = cli.run()
-                ^^^^^^^^^
-  File "/opt/homebrew/Cellar/ansible/9.6.0/libexec/lib/python3.12/site-packages/ansible/cli/adhoc.py", line 104, in run
-    super(AdHocCLI, self).run()
-  File "/opt/homebrew/Cellar/ansible/9.6.0/libexec/lib/python3.12/site-packages/ansible/cli/__init__.py", line 163, in run
-    init_plugin_loader(cli_collections_path)
-  File "/opt/homebrew/Cellar/ansible/9.6.0/libexec/lib/python3.12/site-packages/ansible/plugins/loader.py", line 1522, in init_plugin_loader
-    _load_plugin_filter()
-  File "/opt/homebrew/Cellar/ansible/9.6.0/libexec/lib/python3.12/site-packages/ansible/plugins/loader.py", line 1406, in _load_plugin_filter
-    with open(filter_cfg, 'rb') as f:
-         ^^^^^^^^^^^^^^^^^^^^^^
-IsADirectoryError: [Errno 21] Is a directory: '/Users/lixun/ansible'
+2024-06-04 21:32:33,492 p=13076 u=lixun n=ansible | 47.121.139.55 | CHANGED | rc=0 >>
+USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root         1  0.0  0.2 125628  4088 ?        Ss   20:48   0:01 /usr/lib/systemd/systemd --switched-root --system --deserialize 22
+root         2  0.0  0.0      0     0 ?        S    20:48   0:00 [kthreadd]
+root         4  0.0  0.0      0     0 ?        S<   20:48   0:00 [kworker/0:0H]
+root         5  0.0  0.0      0     0 ?        S    20:48   0:00 [kworker/u4:0]
+root         6  0.0  0.0      0     0 ?        S    20:48   0:00 [ksoftirqd/0]
+root         7  0.0  0.0      0     0 ?        S    20:48   0:00 [migration/0]
+root         8  0.0  0.0      0     0 ?        S    20:48   0:00 [rcu_bh]
+root         9  0.0  0.0      0     0 ?        S    20:48   0:01 [rcu_sched]
+root        10  0.0  0.0      0     0 ?        S<   20:48   0:00 [lru-add-drain]
+root        11  0.0  0.0      0     0 ?        S    20:48   0:00 [watchdog/0]
+root        12  0.0  0.0      0     0 ?        S    20:48   0:00 [watchdog/1]
+root        13  0.0  0.0      0     0 ?        S    20:48   0:00 [migration/1]
+root        14  0.0  0.0      0     0 ?        S    20:48   0:00 [ksoftirqd/1]
+root        16  0.0  0.0      0     0 ?        S<   20:48   0:00 [kworker/1:0H]
+root        18  0.0  0.0      0     0 ?        S    20:48   0:00 [kdevtmpfs]
+root        19  0.0  0.0      0     0 ?        S<   20:48   0:00 [netns]
+root        20  0.0  0.0      0     0 ?        S    20:48   0:00 [khungtaskd]
+root        21  0.0  0.0      0     0 ?        S<   20:48   0:00 [writeback]
+root        22  0.0  0.0      0     0 ?        S<   20:48   0:00 [kintegrityd]
+root        23  0.0  0.0      0     0 ?        S<   20:48   0:00 [bioset]
+root        24  0.0  0.0      0     0 ?        S<   20:48   0:00 [bioset]
+root        25  0.0  0.0      0     0 ?        S<   20:48   0:00 [bioset]
+root        26  0.0  0.0      0     0 ?        S<   20:48   0:00 [kblockd]
+root        27  0.0  0.0      0     0 ?        S<   20:48   0:00 [md]
+root        28  0.0  0.0      0     0 ?        S<   20:48   0:00 [edac-poller]
+root        29  0.0  0.0      0     0 ?        S<   20:48   0:00 [watchdogd]
+root        31  0.0  0.0      0     0 ?        S    20:48   0:00 [kworker/1:1]
+root        36  0.0  0.0      0     0 ?        S    20:48   0:00 [kswapd0]
+root        37  0.0  0.0      0     0 ?        SN   20:48   0:00 [ksmd]
+root        38  0.0  0.0      0     0 ?        SN   20:48   0:00 [khugepaged]
+root        39  0.0  0.0      0     0 ?        S<   20:48   0:00 [crypto]
+root        47  0.0  0.0      0     0 ?        S<   20:48   0:00 [kthrotld]
+root        48  0.0  0.0      0     0 ?        S    20:48   0:00 [kworker/u4:1]
+root        49  0.0  0.0      0     0 ?        S<   20:48   0:00 [kmpath_rdacd]
+root        50  0.0  0.0      0     0 ?        S<   20:48   0:00 [kaluad]
+root        51  0.0  0.0      0     0 ?        S<   20:48   0:00 [kpsmoused]
+root        52  0.0  0.0      0     0 ?        S<   20:48   0:00 [ipv6_addrconf]
+root        65  0.0  0.0      0     0 ?        S<   20:48   0:00 [deferwq]
+root       100  0.0  0.0      0     0 ?        S    20:48   0:00 [kauditd]
+root       101  0.0  0.0      0     0 ?        S    20:48   0:00 [kworker/1:2]
+root       240  0.0  0.0      0     0 ?        S<   20:48   0:00 [ata_sff]
+root       242  0.0  0.0      0     0 ?        S    20:48   0:00 [scsi_eh_0]
+root       245  0.0  0.0      0     0 ?        S<   20:48   0:00 [scsi_tmf_0]
+root       246  0.0  0.0      0     0 ?        S    20:48   0:00 [scsi_eh_1]
+root       247  0.0  0.0      0     0 ?        S<   20:48   0:00 [scsi_tmf_1]
+root       250  0.0  0.0      0     0 ?        S<   20:48   0:00 [ttm_swap]
+root       252  0.0  0.0      0     0 ?        S<   20:48   0:00 [kworker/1:1H]
+root       261  0.0  0.0      0     0 ?        S<   20:48   0:00 [kworker/0:1H]
+root       268  0.0  0.0      0     0 ?        S    20:48   0:00 [jbd2/vda1-8]
+root       269  0.0  0.0      0     0 ?        S<   20:48   0:00 [ext4-rsv-conver]
+root       366  0.0  0.4  40180  7268 ?        Ss   20:48   0:01 /usr/lib/systemd/systemd-journald
+root       388  0.0  0.0      0     0 ?        S    20:48   0:00 [kworker/0:2]
+root       389  0.0  0.1  45368  1868 ?        Ss   20:48   0:00 /usr/lib/systemd/systemd-udevd
+root       433  0.0  0.0  55532   860 ?        S<sl 20:48   0:00 /sbin/auditd
+root       496  0.0  0.0      0     0 ?        S<   20:48   0:00 [rpciod]
+root       499  0.0  0.0      0     0 ?        S<   20:48   0:00 [xprtiod]
+root       520  0.0  0.0      0     0 ?        S<   20:48   0:00 [nfit]
+dbus       542  0.0  0.1  58092  2380 ?        Ss   20:48   0:00 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation
+rpc        543  0.0  0.0  69256  1008 ?        Ss   20:48   0:00 /sbin/rpcbind -w
+root       544  0.0  0.1  19420  2836 ?        Ssl  20:48   0:00 /usr/local/share/assist-daemon/assist_daemon
+polkitd    547  0.0  0.7 612340 14284 ?        Ssl  20:48   0:00 /usr/lib/polkit-1/polkitd --no-debug
+root       548  0.0  0.1  26612  1980 ?        Ss   20:48   0:00 /usr/lib/systemd/systemd-logind
+chrony     562  0.0  0.1 117932  1884 ?        S    20:48   0:00 /usr/sbin/chronyd
+root       563  0.0  0.0 195208  1248 ?        Ssl  20:48   0:00 /usr/sbin/gssproxy -D
+root       805  0.0  0.1 103008  2380 ?        Ss   20:48   0:00 /sbin/dhclient -1 -q -lf /var/lib/dhclient/dhclient--eth0.lease -pf /var/run/dhclient-eth0.pid -H iZf8z9dpfg79q2gk54o8cvZ eth0
+root       874  0.0  1.0 574288 19512 ?        Ssl  20:48   0:00 /usr/bin/python2 -Es /usr/sbin/tuned -l -P
+root      1084  0.0  0.1  89808  2132 ?        Ss   20:48   0:00 /usr/libexec/postfix/master -w
+postfix   1085  0.0  0.2  89912  4096 ?        S    20:48   0:00 pickup -l -t unix -u
+postfix   1086  0.0  0.2  89980  4120 ?        S    20:48   0:00 qmgr -l -t unix -u
+root      1212  0.0  0.4 226720  8064 ?        Ssl  20:48   0:00 /usr/sbin/rsyslogd -n
+root      1215  0.1  0.9 689580 17952 ?        Ssl  20:48   0:03 /usr/local/share/aliyun-assist/2.2.3.601/aliyun-service
+root      1219  0.0  0.0 126388  1616 ?        Ss   20:48   0:00 /usr/sbin/crond -n
+root      1222  0.0  0.0  25908   956 ?        Ss   20:48   0:00 /usr/sbin/atd -f
+root      1226  0.0  0.0 110208   860 tty1     Ss+  20:48   0:00 /sbin/agetty --noclear tty1 linux
+root      1227  0.0  0.0 110208   872 ttyS0    Ss+  20:48   0:00 /sbin/agetty --keep-baud 115200,38400,9600 ttyS0 vt220
+root      1294  0.0  0.2  62200  4896 ?        S<sl 20:48   0:02 /usr/local/aegis/aegis_update/AliYunDunUpdate
+root      1358  0.3  0.4 113180  8932 ?        S<sl 20:49   0:09 /usr/local/aegis/aegis_client/aegis_11_83/AliYunDun
+root      1369  1.4  1.4 152504 26908 ?        S<sl 20:49   0:37 /usr/local/aegis/aegis_client/aegis_11_83/AliYunDunMonitor
+root      1498  0.0  0.2 113004  4340 ?        Ss   20:51   0:00 /usr/sbin/sshd -D
+root      1543  0.0  0.3 157560  6076 ?        Ss   20:51   0:00 sshd: root@pts/0
+root      1545  0.0  0.1 116072  2608 pts/0    Ss+  20:51   0:00 -bash
+root      1669  0.0  0.0 125488  1132 ?        Ss   21:01   0:00 /usr/sbin/anacron -s
+root      8079  0.0  0.2 230448  5220 ?        Ss   21:29   0:00 /usr/sbin/httpd -DFOREGROUND
+apache    8080  0.0  0.1 230448  2992 ?        S    21:29   0:00 /usr/sbin/httpd -DFOREGROUND
+apache    8081  0.0  0.1 230448  2992 ?        S    21:29   0:00 /usr/sbin/httpd -DFOREGROUND
+apache    8082  0.0  0.1 230448  2992 ?        S    21:29   0:00 /usr/sbin/httpd -DFOREGROUND
+apache    8083  0.0  0.1 230448  2992 ?        S    21:29   0:00 /usr/sbin/httpd -DFOREGROUND
+apache    8084  0.0  0.1 230448  2992 ?        S    21:29   0:00 /usr/sbin/httpd -DFOREGROUND
+root      8229  0.2  0.3 155104  5828 ?        Ss   21:32   0:00 sshd: root@pts/1
+root      8275  0.0  0.0 113284  1208 pts/1    Ss+  21:32   0:00 /bin/sh -c /usr/bin/python /root/.ansible/tmp/ansible-tmp-1717507945.690604-13078-72004312808095/AnsiballZ_command.py && sleep 0
+root      8286 10.0  0.7 215456 12988 pts/1    S+   21:32   0:00 /usr/bin/python /root/.ansible/tmp/ansible-tmp-1717507945.690604-13078-72004312808095/AnsiballZ_command.py
+root      8287  0.0  0.1 155452  1880 pts/1    R+   21:32   0:00 ps -aux
+root     12942  0.0  0.0      0     0 ?        S    21:23   0:00 [kworker/0:0]
 
-2024-06-04 21:06:24,118 p=10947 u=lixun n=ansible | ERROR! Unexpected Exception, this is probably a bug: [Errno 21] Is a directory: '/Users/lixun/ansible'
-2024-06-04 21:06:24,118 p=10947 u=lixun n=ansible | the full traceback was:
+2024-06-04 21:38:24,162 p=13290 u=lixun n=ansible |   hosts (1):
+2024-06-04 21:38:24,162 p=13290 u=lixun n=ansible |     47.121.139.55
+2024-06-04 21:40:34,362 p=13369 u=lixun n=ansible | playbook: httpd_init.yaml
+2024-06-04 21:40:34,362 p=13369 u=lixun n=ansible |   play #1 (me): me	TAGS: []
+    pattern: ['me']
+    hosts (1):
+      47.121.139.55
+2024-06-04 21:40:38,440 p=13410 u=lixun n=ansible | playbook: httpd_init.yaml
+2024-06-04 21:40:38,440 p=13410 u=lixun n=ansible |   play #1 (me): me	TAGS: []
+2024-06-04 21:40:38,440 p=13410 u=lixun n=ansible |     tasks:
+      create new file	TAGS: []
+      create new user	TAGS: []
+      install package	TAGS: []
+      start service	TAGS: []
 
-Traceback (most recent call last):
-  File "/opt/homebrew/Cellar/ansible/9.6.0/libexec/lib/python3.12/site-packages/ansible/cli/__init__.py", line 659, in cli_executor
-    exit_code = cli.run()
-                ^^^^^^^^^
-  File "/opt/homebrew/Cellar/ansible/9.6.0/libexec/lib/python3.12/site-packages/ansible/cli/adhoc.py", line 104, in run
-    super(AdHocCLI, self).run()
-  File "/opt/homebrew/Cellar/ansible/9.6.0/libexec/lib/python3.12/site-packages/ansible/cli/__init__.py", line 163, in run
-    init_plugin_loader(cli_collections_path)
-  File "/opt/homebrew/Cellar/ansible/9.6.0/libexec/lib/python3.12/site-packages/ansible/plugins/loader.py", line 1522, in init_plugin_loader
-    _load_plugin_filter()
-  File "/opt/homebrew/Cellar/ansible/9.6.0/libexec/lib/python3.12/site-packages/ansible/plugins/loader.py", line 1406, in _load_plugin_filter
-    with open(filter_cfg, 'rb') as f:
-         ^^^^^^^^^^^^^^^^^^^^^^
-IsADirectoryError: [Errno 21] Is a directory: '/Users/lixun/ansible'
-
-2024-06-04 21:07:28,014 p=10956 u=lixun n=ansible | ERROR! Unexpected Exception, this is probably a bug: [Errno 21] Is a directory: '/Users/lixun/ansible'
-2024-06-04 21:07:28,014 p=10956 u=lixun n=ansible | the full traceback was:
-
-Traceback (most recent call last):
-  File "/opt/homebrew/Cellar/ansible/9.6.0/libexec/lib/python3.12/site-packages/ansible/cli/__init__.py", line 659, in cli_executor
-    exit_code = cli.run()
-                ^^^^^^^^^
-  File "/opt/homebrew/Cellar/ansible/9.6.0/libexec/lib/python3.12/site-packages/ansible/cli/adhoc.py", line 104, in run
-    super(AdHocCLI, self).run()
-  File "/opt/homebrew/Cellar/ansible/9.6.0/libexec/lib/python3.12/site-packages/ansible/cli/__init__.py", line 163, in run
-    init_plugin_loader(cli_collections_path)
-  File "/opt/homebrew/Cellar/ansible/9.6.0/libexec/lib/python3.12/site-packages/ansible/plugins/loader.py", line 1522, in init_plugin_loader
-    _load_plugin_filter()
-  File "/opt/homebrew/Cellar/ansible/9.6.0/libexec/lib/python3.12/site-packages/ansible/plugins/loader.py", line 1406, in _load_plugin_filter
-    with open(filter_cfg, 'rb') as f:
-         ^^^^^^^^^^^^^^^^^^^^^^
-IsADirectoryError: [Errno 21] Is a directory: '/Users/lixun/ansible'
+2024-06-04 21:40:47,143 p=13472 u=lixun n=ansible | playbook: httpd_init.yaml
+2024-06-04 21:40:47,143 p=13472 u=lixun n=ansible |   play #1 (me): me	TAGS: []
+2024-06-04 21:40:47,143 p=13472 u=lixun n=ansible |     tasks:
+      create new file	TAGS: []
+      create new user	TAGS: []
+      install package	TAGS: []
+      start service	TAGS: []
 
