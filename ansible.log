@@ -1,0 +1,55 @@
+2024-06-04 21:06:08,457 p=10941 u=lixun n=ansible | ERROR! Unexpected Exception, this is probably a bug: [Errno 21] Is a directory: '/Users/lixun/ansible'
+2024-06-04 21:06:08,458 p=10941 u=lixun n=ansible | to see the full traceback, use -vvv
+2024-06-04 21:06:08,459 p=10941 u=lixun n=ansible | the full traceback was:
+
+Traceback (most recent call last):
+  File "/opt/homebrew/Cellar/ansible/9.6.0/libexec/lib/python3.12/site-packages/ansible/cli/__init__.py", line 659, in cli_executor
+    exit_code = cli.run()
+                ^^^^^^^^^
+  File "/opt/homebrew/Cellar/ansible/9.6.0/libexec/lib/python3.12/site-packages/ansible/cli/adhoc.py", line 104, in run
+    super(AdHocCLI, self).run()
+  File "/opt/homebrew/Cellar/ansible/9.6.0/libexec/lib/python3.12/site-packages/ansible/cli/__init__.py", line 163, in run
+    init_plugin_loader(cli_collections_path)
+  File "/opt/homebrew/Cellar/ansible/9.6.0/libexec/lib/python3.12/site-packages/ansible/plugins/loader.py", line 1522, in init_plugin_loader
+    _load_plugin_filter()
+  File "/opt/homebrew/Cellar/ansible/9.6.0/libexec/lib/python3.12/site-packages/ansible/plugins/loader.py", line 1406, in _load_plugin_filter
+    with open(filter_cfg, 'rb') as f:
+         ^^^^^^^^^^^^^^^^^^^^^^
+IsADirectoryError: [Errno 21] Is a directory: '/Users/lixun/ansible'
+
+2024-06-04 21:06:24,118 p=10947 u=lixun n=ansible | ERROR! Unexpected Exception, this is probably a bug: [Errno 21] Is a directory: '/Users/lixun/ansible'
+2024-06-04 21:06:24,118 p=10947 u=lixun n=ansible | the full traceback was:
+
+Traceback (most recent call last):
+  File "/opt/homebrew/Cellar/ansible/9.6.0/libexec/lib/python3.12/site-packages/ansible/cli/__init__.py", line 659, in cli_executor
+    exit_code = cli.run()
+                ^^^^^^^^^
+  File "/opt/homebrew/Cellar/ansible/9.6.0/libexec/lib/python3.12/site-packages/ansible/cli/adhoc.py", line 104, in run
+    super(AdHocCLI, self).run()
+  File "/opt/homebrew/Cellar/ansible/9.6.0/libexec/lib/python3.12/site-packages/ansible/cli/__init__.py", line 163, in run
+    init_plugin_loader(cli_collections_path)
+  File "/opt/homebrew/Cellar/ansible/9.6.0/libexec/lib/python3.12/site-packages/ansible/plugins/loader.py", line 1522, in init_plugin_loader
+    _load_plugin_filter()
+  File "/opt/homebrew/Cellar/ansible/9.6.0/libexec/lib/python3.12/site-packages/ansible/plugins/loader.py", line 1406, in _load_plugin_filter
+    with open(filter_cfg, 'rb') as f:
+         ^^^^^^^^^^^^^^^^^^^^^^
+IsADirectoryError: [Errno 21] Is a directory: '/Users/lixun/ansible'
+
+2024-06-04 21:07:28,014 p=10956 u=lixun n=ansible | ERROR! Unexpected Exception, this is probably a bug: [Errno 21] Is a directory: '/Users/lixun/ansible'
+2024-06-04 21:07:28,014 p=10956 u=lixun n=ansible | the full traceback was:
+
+Traceback (most recent call last):
+  File "/opt/homebrew/Cellar/ansible/9.6.0/libexec/lib/python3.12/site-packages/ansible/cli/__init__.py", line 659, in cli_executor
+    exit_code = cli.run()
+                ^^^^^^^^^
+  File "/opt/homebrew/Cellar/ansible/9.6.0/libexec/lib/python3.12/site-packages/ansible/cli/adhoc.py", line 104, in run
+    super(AdHocCLI, self).run()
+  File "/opt/homebrew/Cellar/ansible/9.6.0/libexec/lib/python3.12/site-packages/ansible/cli/__init__.py", line 163, in run
+    init_plugin_loader(cli_collections_path)
+  File "/opt/homebrew/Cellar/ansible/9.6.0/libexec/lib/python3.12/site-packages/ansible/plugins/loader.py", line 1522, in init_plugin_loader
+    _load_plugin_filter()
+  File "/opt/homebrew/Cellar/ansible/9.6.0/libexec/lib/python3.12/site-packages/ansible/plugins/loader.py", line 1406, in _load_plugin_filter
+    with open(filter_cfg, 'rb') as f:
+         ^^^^^^^^^^^^^^^^^^^^^^
+IsADirectoryError: [Errno 21] Is a directory: '/Users/lixun/ansible'
+
