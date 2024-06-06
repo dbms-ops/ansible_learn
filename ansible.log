@@ -118,3 +118,314 @@ root     12942  0.0  0.0      0     0 ?        S    21:23   0:00 [kworker/0:0]
       install package	TAGS: []
       start service	TAGS: []
 
+2024-06-04 21:47:33,606 p=13593 u=lixun n=ansible | Starting galaxy role install process
+2024-06-04 21:47:34,782 p=13593 u=lixun n=ansible | - downloading role 'cgroups-limits', owned by alet
+2024-06-04 21:47:38,032 p=13593 u=lixun n=ansible | - downloading role from https://github.com/alet/cgroups-limits/archive/master.tar.gz
+2024-06-04 21:47:41,095 p=13593 u=lixun n=ansible | - extracting alet.cgroups-limits to /Users/lixun/.ansible/roles/alet.cgroups-limits
+2024-06-04 21:47:41,107 p=13593 u=lixun n=ansible | - alet.cgroups-limits (master) was installed successfully
+2024-06-04 21:48:24,250 p=13651 u=lixun n=ansible | [WARNING]: cgroup was not found
+
+2024-06-04 21:48:36,522 p=13705 u=lixun n=ansible | [WARNING]: alet.cgroups was not found
+
+2024-06-04 21:48:40,380 p=13743 u=lixun n=ansible | [WARNING]: alet.cgroups-limits was not found
+
+2024-06-04 21:48:55,074 p=13788 u=lixun n=ansible | [WARNING]: alet.cgroups-limits was not found
+
+2024-06-05 08:14:01,006 p=16454 u=lixun n=ansible | ERROR! Missing name(s), incorrect options passed for detailed documentation.
+2024-06-06 19:49:11,859 p=22527 u=lixun n=ansible | 47.121.139.55 | CHANGED | rc=0 | (stdout) lixunCentos
+2024-06-06 19:49:21,285 p=22559 u=lixun n=ansible | 47.121.139.55 | CHANGED | rc=0 | (stdout) lixunCentos
+2024-06-06 19:58:56,578 p=22871 u=lixun n=ansible | 47.121.139.55 | CHANGED => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/bin/python"
+    },
+    "changed": true,
+    "checksum": "fdb1090d44c1980958ec96d3e2066b9a73bfda32",
+    "dest": "/Users/lixun/ansible/httpd.conf",
+    "gid": 0,
+    "group": "root",
+    "md5sum": "f5e7449c0f17bc856e86011cb5d152ba",
+    "mode": "0644",
+    "owner": "root",
+    "size": 11753,
+    "src": "/etc/httpd/conf/httpd.conf",
+    "state": "file",
+    "uid": 0
+}
+2024-06-06 20:00:14,486 p=22988 u=lixun n=ansible | 47.121.139.55 | SUCCESS => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/bin/python"
+    },
+    "changed": false,
+    "checksum": "fdb1090d44c1980958ec96d3e2066b9a73bfda32",
+    "dest": "/Users/lixun/ansible/httpd.conf",
+    "gid": 0,
+    "group": "root",
+    "md5sum": "f5e7449c0f17bc856e86011cb5d152ba",
+    "mode": "0644",
+    "owner": "root",
+    "size": 11753,
+    "src": "/etc/httpd/conf/httpd.conf",
+    "state": "file",
+    "uid": 0
+}
+2024-06-06 20:01:35,777 p=23084 u=lixun n=ansible | 47.121.139.55 | CHANGED => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/bin/python"
+    },
+    "changed": true,
+    "checksum": "fdb1090d44c1980958ec96d3e2066b9a73bfda32",
+    "dest": "/Users/lixun/ansible/httpd.conf_back",
+    "gid": 0,
+    "group": "root",
+    "md5sum": "f5e7449c0f17bc856e86011cb5d152ba",
+    "mode": "0644",
+    "owner": "root",
+    "size": 11753,
+    "src": "/etc/httpd/conf/httpd.conf",
+    "state": "file",
+    "uid": 0
+}
+2024-06-06 20:07:46,941 p=23572 u=lixun n=ansible | [WARNING]: Could not match supplied host pattern, ignoring: httpd_init.yaml
+
+2024-06-06 20:07:46,941 p=23572 u=lixun n=ansible | [WARNING]: No hosts matched, nothing to do
+
+2024-06-06 20:07:46,943 p=23572 u=lixun n=ansible | ERROR! No argument passed to command module
+2024-06-06 20:07:57,118 p=23594 u=lixun n=ansible | PLAY [me] *************************************************************************************************************************************************
+2024-06-06 20:07:57,122 p=23594 u=lixun n=ansible | TASK [Gathering Facts] ************************************************************************************************************************************
+2024-06-06 20:08:01,103 p=23594 u=lixun n=ansible | ok: [47.121.139.55]
+2024-06-06 20:08:01,109 p=23594 u=lixun n=ansible | TASK [install httpd package] ******************************************************************************************************************************
+2024-06-06 20:08:02,957 p=23594 u=lixun n=ansible | ok: [47.121.139.55]
+2024-06-06 20:08:02,965 p=23594 u=lixun n=ansible | TASK [copy conf file] *************************************************************************************************************************************
+2024-06-06 20:08:05,847 p=23594 u=lixun n=ansible | ok: [47.121.139.55]
+2024-06-06 20:08:05,855 p=23594 u=lixun n=ansible | TASK [start service] **************************************************************************************************************************************
+2024-06-06 20:08:07,713 p=23594 u=lixun n=ansible | ok: [47.121.139.55]
+2024-06-06 20:08:07,726 p=23594 u=lixun n=ansible | PLAY RECAP ************************************************************************************************************************************************
+2024-06-06 20:08:07,726 p=23594 u=lixun n=ansible | 47.121.139.55              : ok=4    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2024-06-06 20:08:29,931 p=23662 u=lixun n=ansible | PLAY [me] *************************************************************************************************************************************************
+2024-06-06 20:08:29,935 p=23662 u=lixun n=ansible | TASK [Gathering Facts] ************************************************************************************************************************************
+2024-06-06 20:08:33,351 p=23662 u=lixun n=ansible | ok: [47.121.139.55]
+2024-06-06 20:08:33,359 p=23662 u=lixun n=ansible | TASK [install httpd package] ******************************************************************************************************************************
+2024-06-06 20:08:35,075 p=23662 u=lixun n=ansible | ok: [47.121.139.55]
+2024-06-06 20:08:35,084 p=23662 u=lixun n=ansible | TASK [copy conf file] *************************************************************************************************************************************
+2024-06-06 20:08:37,946 p=23662 u=lixun n=ansible | ok: [47.121.139.55]
+2024-06-06 20:08:37,953 p=23662 u=lixun n=ansible | TASK [start service] **************************************************************************************************************************************
+2024-06-06 20:08:40,157 p=23662 u=lixun n=ansible | ok: [47.121.139.55]
+2024-06-06 20:08:40,168 p=23662 u=lixun n=ansible | PLAY RECAP ************************************************************************************************************************************************
+2024-06-06 20:08:40,168 p=23662 u=lixun n=ansible | 47.121.139.55              : ok=4    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2024-06-06 20:09:16,287 p=23759 u=lixun n=ansible | PLAY [me] *************************************************************************************************************************************************
+2024-06-06 20:09:16,290 p=23759 u=lixun n=ansible | TASK [Gathering Facts] ************************************************************************************************************************************
+2024-06-06 20:09:19,671 p=23759 u=lixun n=ansible | ok: [47.121.139.55]
+2024-06-06 20:09:19,680 p=23759 u=lixun n=ansible | TASK [install httpd package] ******************************************************************************************************************************
+2024-06-06 20:09:22,771 p=23759 u=lixun n=ansible | ok: [47.121.139.55]
+2024-06-06 20:09:22,779 p=23759 u=lixun n=ansible | TASK [copy conf file] *************************************************************************************************************************************
+2024-06-06 20:09:26,476 p=23759 u=lixun n=ansible | changed: [47.121.139.55]
+2024-06-06 20:09:26,482 p=23759 u=lixun n=ansible | TASK [start service] **************************************************************************************************************************************
+2024-06-06 20:09:30,079 p=23759 u=lixun n=ansible | ok: [47.121.139.55]
+2024-06-06 20:09:30,090 p=23759 u=lixun n=ansible | RUNNING HANDLER [restart service] *************************************************************************************************************************
+2024-06-06 20:09:33,182 p=23759 u=lixun n=ansible | changed: [47.121.139.55]
+2024-06-06 20:09:33,191 p=23759 u=lixun n=ansible | PLAY RECAP ************************************************************************************************************************************************
+2024-06-06 20:09:33,191 p=23759 u=lixun n=ansible | 47.121.139.55              : ok=5    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2024-06-06 20:10:05,703 p=23846 u=lixun n=ansible | 47.121.139.55 | CHANGED | rc=0 >>
+USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root         1  0.0  0.2 125628  4092 ?        Ss   Jun04   0:08 /usr/lib/systemd/systemd --switched-root --system --deserialize 22
+root         2  0.0  0.0      0     0 ?        S    Jun04   0:00 [kthreadd]
+root         4  0.0  0.0      0     0 ?        S<   Jun04   0:00 [kworker/0:0H]
+root         6  0.0  0.0      0     0 ?        S    Jun04   0:00 [ksoftirqd/0]
+root         7  0.0  0.0      0     0 ?        S    Jun04   0:00 [migration/0]
+root         8  0.0  0.0      0     0 ?        S    Jun04   0:00 [rcu_bh]
+root         9  0.0  0.0      0     0 ?        S    Jun04   0:25 [rcu_sched]
+root        10  0.0  0.0      0     0 ?        S<   Jun04   0:00 [lru-add-drain]
+root        11  0.0  0.0      0     0 ?        S    Jun04   0:00 [watchdog/0]
+root        12  0.0  0.0      0     0 ?        S    Jun04   0:00 [watchdog/1]
+root        13  0.0  0.0      0     0 ?        S    Jun04   0:00 [migration/1]
+root        14  0.0  0.0      0     0 ?        S    Jun04   0:00 [ksoftirqd/1]
+root        16  0.0  0.0      0     0 ?        S<   Jun04   0:00 [kworker/1:0H]
+root        18  0.0  0.0      0     0 ?        S    Jun04   0:00 [kdevtmpfs]
+root        19  0.0  0.0      0     0 ?        S<   Jun04   0:00 [netns]
+root        20  0.0  0.0      0     0 ?        S    Jun04   0:00 [khungtaskd]
+root        21  0.0  0.0      0     0 ?        S<   Jun04   0:00 [writeback]
+root        22  0.0  0.0      0     0 ?        S<   Jun04   0:00 [kintegrityd]
+root        23  0.0  0.0      0     0 ?        S<   Jun04   0:00 [bioset]
+root        24  0.0  0.0      0     0 ?        S<   Jun04   0:00 [bioset]
+root        25  0.0  0.0      0     0 ?        S<   Jun04   0:00 [bioset]
+root        26  0.0  0.0      0     0 ?        S<   Jun04   0:00 [kblockd]
+root        27  0.0  0.0      0     0 ?        S<   Jun04   0:00 [md]
+root        28  0.0  0.0      0     0 ?        S<   Jun04   0:00 [edac-poller]
+root        29  0.0  0.0      0     0 ?        S<   Jun04   0:00 [watchdogd]
+root        36  0.0  0.0      0     0 ?        S    Jun04   0:00 [kswapd0]
+root        37  0.0  0.0      0     0 ?        SN   Jun04   0:00 [ksmd]
+root        38  0.0  0.0      0     0 ?        SN   Jun04   0:00 [khugepaged]
+root        39  0.0  0.0      0     0 ?        S<   Jun04   0:00 [crypto]
+root        47  0.0  0.0      0     0 ?        S<   Jun04   0:00 [kthrotld]
+root        49  0.0  0.0      0     0 ?        S<   Jun04   0:00 [kmpath_rdacd]
+root        50  0.0  0.0      0     0 ?        S<   Jun04   0:00 [kaluad]
+root        51  0.0  0.0      0     0 ?        S<   Jun04   0:00 [kpsmoused]
+root        52  0.0  0.0      0     0 ?        S<   Jun04   0:00 [ipv6_addrconf]
+root        65  0.0  0.0      0     0 ?        S<   Jun04   0:00 [deferwq]
+root       100  0.0  0.0      0     0 ?        S    Jun04   0:00 [kauditd]
+root       240  0.0  0.0      0     0 ?        S<   Jun04   0:00 [ata_sff]
+root       242  0.0  0.0      0     0 ?        S    Jun04   0:00 [scsi_eh_0]
+root       245  0.0  0.0      0     0 ?        S<   Jun04   0:00 [scsi_tmf_0]
+root       246  0.0  0.0      0     0 ?        S    Jun04   0:00 [scsi_eh_1]
+root       247  0.0  0.0      0     0 ?        S<   Jun04   0:00 [scsi_tmf_1]
+root       250  0.0  0.0      0     0 ?        S<   Jun04   0:00 [ttm_swap]
+root       252  0.0  0.0      0     0 ?        S<   Jun04   0:00 [kworker/1:1H]
+root       261  0.0  0.0      0     0 ?        S<   Jun04   0:00 [kworker/0:1H]
+root       268  0.0  0.0      0     0 ?        S    Jun04   0:00 [jbd2/vda1-8]
+root       269  0.0  0.0      0     0 ?        S<   Jun04   0:00 [ext4-rsv-conver]
+root       366  0.0  0.4  40180  8724 ?        Ss   Jun04   0:02 /usr/lib/systemd/systemd-journald
+root       389  0.0  0.1  45324  1824 ?        Ss   Jun04   0:00 /usr/lib/systemd/systemd-udevd
+root       433  0.0  0.0  55532   860 ?        S<sl Jun04   0:00 /sbin/auditd
+root       496  0.0  0.0      0     0 ?        S<   Jun04   0:00 [rpciod]
+root       499  0.0  0.0      0     0 ?        S<   Jun04   0:00 [xprtiod]
+root       520  0.0  0.0      0     0 ?        S<   Jun04   0:00 [nfit]
+dbus       542  0.0  0.1  58092  2380 ?        Ss   Jun04   0:06 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation
+rpc        543  0.0  0.0  69256  1008 ?        Ss   Jun04   0:00 /sbin/rpcbind -w
+root       544  0.0  0.1  19420  2868 ?        Ssl  Jun04   0:29 /usr/local/share/assist-daemon/assist_daemon
+polkitd    547  0.0  0.8 612340 14396 ?        Ssl  Jun04   0:01 /usr/lib/polkit-1/polkitd --no-debug
+root       548  0.0  0.1  26612  1980 ?        Ss   Jun04   0:03 /usr/lib/systemd/systemd-logind
+chrony     562  0.0  0.1 117932  1892 ?        S    Jun04   0:00 /usr/sbin/chronyd
+root       563  0.0  0.0 195208  1248 ?        Ssl  Jun04   0:00 /usr/sbin/gssproxy -D
+root       805  0.0  0.1 103008  2380 ?        Ss   Jun04   0:00 /sbin/dhclient -1 -q -lf /var/lib/dhclient/dhclient--eth0.lease -pf /var/run/dhclient-eth0.pid -H iZf8z9dpfg79q2gk54o8cvZ eth0
+root       874  0.0  1.0 574288 19512 ?        Ssl  Jun04   0:14 /usr/bin/python2 -Es /usr/sbin/tuned -l -P
+root      1084  0.0  0.1  89808  2224 ?        Ss   Jun04   0:00 /usr/libexec/postfix/master -w
+postfix   1086  0.0  0.2  89980  4120 ?        S    Jun04   0:00 qmgr -l -t unix -u
+root      1212  0.0  0.5 226720  9396 ?        Ssl  Jun04   0:07 /usr/sbin/rsyslogd -n
+root      1215  0.0  0.9 689580 16972 ?        Ssl  Jun04   2:49 /usr/local/share/aliyun-assist/2.2.3.601/aliyun-service
+root      1219  0.0  0.0 126388  1616 ?        Ss   Jun04   0:00 /usr/sbin/crond -n
+root      1222  0.0  0.0  25908   956 ?        Ss   Jun04   0:00 /usr/sbin/atd -f
+root      1226  0.0  0.0 110208   860 tty1     Ss+  Jun04   0:00 /sbin/agetty --noclear tty1 linux
+root      1227  0.0  0.0 110208   872 ttyS0    Ss+  Jun04   0:00 /sbin/agetty --keep-baud 115200,38400,9600 ttyS0 vt220
+root      1498  0.0  0.2 113004  4340 ?        Ss   Jun04   0:00 /usr/sbin/sshd -D
+root     10117  0.0  0.0      0     0 ?        S    Jun05   0:00 [kworker/u4:2]
+root     10212  0.0  0.2  62268  5020 ?        S<sl Jun05   0:52 /usr/local/aegis/aegis_update/AliYunDunUpdate
+root     10242  0.2  0.5 113128  9700 ?        S<sl Jun05   4:30 /usr/local/aegis/aegis_client/aegis_11_91/AliYunDun
+root     10253  0.9  0.8 143460 16088 ?        S<sl Jun05  15:54 /usr/local/aegis/aegis_client/aegis_11_91/AliYunDunMonitor
+root     12353  0.0  0.0      0     0 ?        S    15:20   0:00 [kworker/u4:1]
+root     12527  0.0  0.0      0     0 ?        S    17:40   0:00 [kworker/1:1]
+root     12537  0.0  0.0      0     0 ?        S    17:50   0:00 [kworker/0:2]
+root     12649  0.0  0.0      0     0 ?        S    18:40   0:00 [kworker/0:1]
+postfix  12714  0.0  0.2  89912  4104 ?        S    19:30   0:00 pickup -l -t unix -u
+root     12720  0.0  0.0      0     0 ?        S    19:40   0:00 [kworker/1:2]
+root     12869  0.0  0.3 154792  5564 ?        Ss   19:53   0:00 sshd: root@pts/0
+root     12871  0.0  0.1 116204  2824 pts/0    Ss+  19:53   0:00 -bash
+root     13170  0.2  0.3 155104  5964 ?        Ss   20:07   0:00 sshd: root@pts/1
+root     14214  0.0  0.2 230448  5220 ?        Ss   20:09   0:00 /usr/sbin/httpd -DFOREGROUND
+apache   14215  0.0  0.1 230448  2992 ?        S    20:09   0:00 /usr/sbin/httpd -DFOREGROUND
+apache   14216  0.0  0.1 230448  2992 ?        S    20:09   0:00 /usr/sbin/httpd -DFOREGROUND
+apache   14217  0.0  0.1 230448  2992 ?        S    20:09   0:00 /usr/sbin/httpd -DFOREGROUND
+apache   14218  0.0  0.1 230448  2992 ?        S    20:09   0:00 /usr/sbin/httpd -DFOREGROUND
+apache   14219  0.0  0.1 230448  2992 ?        S    20:09   0:00 /usr/sbin/httpd -DFOREGROUND
+root     14277  0.0  0.0 113284  1204 pts/1    Ss+  20:10   0:00 /bin/sh -c /usr/bin/python /root/.ansible/tmp/ansible-tmp-1717675803.919829-23848-86531164163262/AnsiballZ_command.py && sleep 0
+root     14288  0.0  0.7 215460 12992 pts/1    S+   20:10   0:00 /usr/bin/python /root/.ansible/tmp/ansible-tmp-1717675803.919829-23848-86531164163262/AnsiballZ_command.py
+root     14289  0.0  0.1 155452  1880 pts/1    R+   20:10   0:00 ps -aux
+
+2024-06-06 20:10:18,746 p=23870 u=lixun n=ansible | 47.121.139.55 | CHANGED | rc=0 >>
+F S UID        PID  PPID  C PRI  NI ADDR SZ WCHAN  STIME TTY          TIME CMD
+4 S root         1     0  0  80   0 - 31407 ep_pol Jun04 ?        00:00:08 /usr/lib/systemd/systemd --switched-root --system --deserialize 22
+1 S root         2     0  0  80   0 -     0 kthrea Jun04 ?        00:00:00 [kthreadd]
+1 S root         4     2  0  60 -20 -     0 worker Jun04 ?        00:00:00 [kworker/0:0H]
+1 S root         6     2  0  80   0 -     0 smpboo Jun04 ?        00:00:00 [ksoftirqd/0]
+1 S root         7     2  0 -40   - -     0 smpboo Jun04 ?        00:00:00 [migration/0]
+1 S root         8     2  0  80   0 -     0 rcu_gp Jun04 ?        00:00:00 [rcu_bh]
+1 S root         9     2  0  80   0 -     0 rcu_gp Jun04 ?        00:00:25 [rcu_sched]
+1 S root        10     2  0  60 -20 -     0 rescue Jun04 ?        00:00:00 [lru-add-drain]
+5 S root        11     2  0 -40   - -     0 smpboo Jun04 ?        00:00:00 [watchdog/0]
+5 S root        12     2  0 -40   - -     0 smpboo Jun04 ?        00:00:00 [watchdog/1]
+1 S root        13     2  0 -40   - -     0 smpboo Jun04 ?        00:00:00 [migration/1]
+1 S root        14     2  0  80   0 -     0 smpboo Jun04 ?        00:00:00 [ksoftirqd/1]
+1 S root        16     2  0  60 -20 -     0 worker Jun04 ?        00:00:00 [kworker/1:0H]
+5 S root        18     2  0  80   0 -     0 devtmp Jun04 ?        00:00:00 [kdevtmpfs]
+1 S root        19     2  0  60 -20 -     0 rescue Jun04 ?        00:00:00 [netns]
+1 S root        20     2  0  80   0 -     0 watchd Jun04 ?        00:00:00 [khungtaskd]
+1 S root        21     2  0  60 -20 -     0 rescue Jun04 ?        00:00:00 [writeback]
+1 S root        22     2  0  60 -20 -     0 rescue Jun04 ?        00:00:00 [kintegrityd]
+1 S root        23     2  0  60 -20 -     0 rescue Jun04 ?        00:00:00 [bioset]
+1 S root        24     2  0  60 -20 -     0 rescue Jun04 ?        00:00:00 [bioset]
+1 S root        25     2  0  60 -20 -     0 rescue Jun04 ?        00:00:00 [bioset]
+1 S root        26     2  0  60 -20 -     0 rescue Jun04 ?        00:00:00 [kblockd]
+1 S root        27     2  0  60 -20 -     0 rescue Jun04 ?        00:00:00 [md]
+1 S root        28     2  0  60 -20 -     0 rescue Jun04 ?        00:00:00 [edac-poller]
+1 S root        29     2  0  60 -20 -     0 rescue Jun04 ?        00:00:00 [watchdogd]
+1 S root        36     2  0  80   0 -     0 kswapd Jun04 ?        00:00:00 [kswapd0]
+1 S root        37     2  0  85   5 -     0 ksm_sc Jun04 ?        00:00:00 [ksmd]
+1 S root        38     2  0  99  19 -     0 khugep Jun04 ?        00:00:00 [khugepaged]
+1 S root        39     2  0  60 -20 -     0 rescue Jun04 ?        00:00:00 [crypto]
+1 S root        47     2  0  60 -20 -     0 rescue Jun04 ?        00:00:00 [kthrotld]
+1 S root        49     2  0  60 -20 -     0 rescue Jun04 ?        00:00:00 [kmpath_rdacd]
+1 S root        50     2  0  60 -20 -     0 rescue Jun04 ?        00:00:00 [kaluad]
+1 S root        51     2  0  60 -20 -     0 rescue Jun04 ?        00:00:00 [kpsmoused]
+1 S root        52     2  0  60 -20 -     0 rescue Jun04 ?        00:00:00 [ipv6_addrconf]
+1 S root        65     2  0  60 -20 -     0 rescue Jun04 ?        00:00:00 [deferwq]
+1 S root       100     2  0  80   0 -     0 kaudit Jun04 ?        00:00:00 [kauditd]
+1 S root       240     2  0  60 -20 -     0 rescue Jun04 ?        00:00:00 [ata_sff]
+1 S root       242     2  0  80   0 -     0 scsi_e Jun04 ?        00:00:00 [scsi_eh_0]
+1 S root       245     2  0  60 -20 -     0 rescue Jun04 ?        00:00:00 [scsi_tmf_0]
+1 S root       246     2  0  80   0 -     0 scsi_e Jun04 ?        00:00:00 [scsi_eh_1]
+1 S root       247     2  0  60 -20 -     0 rescue Jun04 ?        00:00:00 [scsi_tmf_1]
+1 S root       250     2  0  60 -20 -     0 rescue Jun04 ?        00:00:00 [ttm_swap]
+1 S root       252     2  0  60 -20 -     0 worker Jun04 ?        00:00:00 [kworker/1:1H]
+1 S root       261     2  0  60 -20 -     0 worker Jun04 ?        00:00:00 [kworker/0:1H]
+1 S root       268     2  0  80   0 -     0 kjourn Jun04 ?        00:00:00 [jbd2/vda1-8]
+1 S root       269     2  0  60 -20 -     0 rescue Jun04 ?        00:00:00 [ext4-rsv-conver]
+4 S root       366     1  0  80   0 - 10045 ep_pol Jun04 ?        00:00:02 /usr/lib/systemd/systemd-journald
+4 S root       389     1  0  80   0 - 11331 ep_pol Jun04 ?        00:00:00 /usr/lib/systemd/systemd-udevd
+5 S root       433     1  0  76  -4 - 13883 ep_pol Jun04 ?        00:00:00 /sbin/auditd
+1 S root       496     2  0  60 -20 -     0 rescue Jun04 ?        00:00:00 [rpciod]
+1 S root       499     2  0  60 -20 -     0 rescue Jun04 ?        00:00:00 [xprtiod]
+1 S root       520     2  0  60 -20 -     0 rescue Jun04 ?        00:00:00 [nfit]
+4 S dbus       542     1  0  80   0 - 14523 ep_pol Jun04 ?        00:00:06 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation
+5 S rpc        543     1  0  80   0 - 17314 poll_s Jun04 ?        00:00:00 /sbin/rpcbind -w
+4 S root       544     1  0  80   0 -  4855 futex_ Jun04 ?        00:00:29 /usr/local/share/assist-daemon/assist_daemon
+4 S polkitd    547     1  0  80   0 - 153085 poll_s Jun04 ?       00:00:01 /usr/lib/polkit-1/polkitd --no-debug
+4 S root       548     1  0  80   0 -  6653 ep_pol Jun04 ?        00:00:03 /usr/lib/systemd/systemd-logind
+5 S chrony     562     1  0  80   0 - 29483 poll_s Jun04 ?        00:00:00 /usr/sbin/chronyd
+1 S root       563     1  0  80   0 - 48802 ep_pol Jun04 ?        00:00:00 /usr/sbin/gssproxy -D
+1 S root       805     1  0  80   0 - 25752 poll_s Jun04 ?        00:00:00 /sbin/dhclient -1 -q -lf /var/lib/dhclient/dhclient--eth0.lease -pf /var/run/dhclient-eth0.pid -H iZf8z9dpfg79q2gk54o8cvZ eth0
+4 S root       874     1  0  80   0 - 143572 poll_s Jun04 ?       00:00:14 /usr/bin/python2 -Es /usr/sbin/tuned -l -P
+5 S root      1084     1  0  80   0 - 22452 ep_pol Jun04 ?        00:00:00 /usr/libexec/postfix/master -w
+4 S postfix   1086  1084  0  80   0 - 22495 ep_pol Jun04 ?        00:00:00 qmgr -l -t unix -u
+4 S root      1212     1  0  80   0 - 56680 poll_s Jun04 ?        00:00:07 /usr/sbin/rsyslogd -n
+4 S root      1215     1  0  80   0 - 172395 futex_ Jun04 ?       00:02:49 /usr/local/share/aliyun-assist/2.2.3.601/aliyun-service
+4 S root      1219     1  0  80   0 - 31597 hrtime Jun04 ?        00:00:00 /usr/sbin/crond -n
+4 S root      1222     1  0  80   0 -  6477 hrtime Jun04 ?        00:00:00 /usr/sbin/atd -f
+4 S root      1226     1  0  80   0 - 27552 n_tty_ Jun04 tty1     00:00:00 /sbin/agetty --noclear tty1 linux
+4 S root      1227     1  0  80   0 - 27552 n_tty_ Jun04 ttyS0    00:00:00 /sbin/agetty --keep-baud 115200,38400,9600 ttyS0 vt220
+4 S root      1498     1  0  80   0 - 28251 poll_s Jun04 ?        00:00:00 /usr/sbin/sshd -D
+1 S root     10117     2  0  80   0 -     0 worker Jun05 ?        00:00:00 [kworker/u4:2]
+1 S root     10212     1  0  70 -10 - 15567 hrtime Jun05 ?        00:00:52 /usr/local/aegis/aegis_update/AliYunDunUpdate
+5 S root     10242     1  0  70 -10 - 28282 hrtime Jun05 ?        00:04:30 /usr/local/aegis/aegis_client/aegis_11_91/AliYunDun
+1 S root     10253     1  0  70 -10 - 35865 hrtime Jun05 ?        00:15:54 /usr/local/aegis/aegis_client/aegis_11_91/AliYunDunMonitor
+1 S root     12353     2  0  80   0 -     0 worker 15:20 ?        00:00:00 [kworker/u4:1]
+1 S root     12527     2  0  80   0 -     0 worker 17:40 ?        00:00:00 [kworker/1:1]
+1 S root     12537     2  0  80   0 -     0 worker 17:50 ?        00:00:00 [kworker/0:2]
+1 S root     12649     2  0  80   0 -     0 worker 18:40 ?        00:00:00 [kworker/0:1]
+4 S postfix  12714  1084  0  80   0 - 22478 ep_pol 19:30 ?        00:00:00 pickup -l -t unix -u
+1 S root     12720     2  0  80   0 -     0 worker 19:40 ?        00:00:00 [kworker/1:2]
+4 S root     12869  1498  0  80   0 - 38698 poll_s 19:53 ?        00:00:00 sshd: root@pts/0
+4 S root     12871 12869  0  80   0 - 29051 n_tty_ 19:53 pts/0    00:00:00 -bash
+4 S root     13170  1498  0  80   0 - 38776 poll_s 20:07 ?        00:00:00 sshd: root@pts/1
+4 S root     14214     1  0  80   0 - 57612 poll_s 20:09 ?        00:00:00 /usr/sbin/httpd -DFOREGROUND
+5 S apache   14215 14214  0  80   0 - 57612 inet_c 20:09 ?        00:00:00 /usr/sbin/httpd -DFOREGROUND
+5 S apache   14216 14214  0  80   0 - 57612 inet_c 20:09 ?        00:00:00 /usr/sbin/httpd -DFOREGROUND
+5 S apache   14217 14214  0  80   0 - 57612 inet_c 20:09 ?        00:00:00 /usr/sbin/httpd -DFOREGROUND
+5 S apache   14218 14214  0  80   0 - 57612 inet_c 20:09 ?        00:00:00 /usr/sbin/httpd -DFOREGROUND
+5 S apache   14219 14214  0  80   0 - 57612 inet_c 20:09 ?        00:00:00 /usr/sbin/httpd -DFOREGROUND
+4 S root     14342 13170  0  80   0 - 28321 do_wai 20:10 pts/1    00:00:00 /bin/sh -c /usr/bin/python /root/.ansible/tmp/ansible-tmp-1717675816.9093828-23872-196419084312819/AnsiballZ_command.py && sleep 0
+0 S root     14353 14342  0  80   0 - 53865 poll_s 20:10 pts/1    00:00:00 /usr/bin/python /root/.ansible/tmp/ansible-tmp-1717675816.9093828-23872-196419084312819/AnsiballZ_command.py
+0 R root     14354 14353  0  80   0 - 38863 -      20:10 pts/1    00:00:00 ps -lef
+
+2024-06-06 20:10:39,257 p=23901 u=lixun n=ansible | 47.121.139.55 | CHANGED | rc=0 >>
+Active Internet connections (servers and established)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       PID/Program name    
+tcp        0      0 0.0.0.0:111             0.0.0.0:*               LISTEN      543/rpcbind         
+tcp        0      0 0.0.0.0:22              0.0.0.0:*               LISTEN      1498/sshd           
+tcp        0      0 127.0.0.1:25            0.0.0.0:*               LISTEN      1084/master         
+tcp        0      0 172.28.244.23:22        115.171.12.5:14969      ESTABLISHED 12869/sshd: root@pt 
+tcp        0      0 172.28.244.23:22        115.171.12.5:15046      ESTABLISHED 13170/sshd: root@pt 
+tcp        0      0 172.28.244.23:48992     100.100.30.26:80        ESTABLISHED 10242/AliYunDun     
+tcp        0      0 172.28.244.23:56326     100.100.0.5:80          TIME_WAIT   -                   
+tcp6       0      0 :::111                  :::*                    LISTEN      543/rpcbind         
+tcp6       0      0 :::8080                 :::*                    LISTEN      14214/httpd         
+tcp6       0      0 ::1:25                  :::*                    LISTEN      1084/master         
+
