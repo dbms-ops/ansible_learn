@@ -1312,3 +1312,16 @@ LISTEN     0      128       [::]:8080                  [::]:*
 2024-06-06 20:37:18,815 p=25095 u=lixun n=ansible | fatal: [47.121.139.55]: FAILED! => {"changed": false, "msg": "Could not find the requested service vsftpd,redis: host"}
 2024-06-06 20:37:18,815 p=25095 u=lixun n=ansible | PLAY RECAP ************************************************************************************************************************************************
 2024-06-06 20:37:18,816 p=25095 u=lixun n=ansible | 47.121.139.55              : ok=2    changed=1    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2024-06-06 20:41:33,881 p=25320 u=lixun n=ansible | [DEPRECATION WARNING]: Specifying a list of dictionaries for vars is deprecated in favor of specifying a dictionary. This feature will be removed in 
+version 2.18. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2024-06-06 20:41:33,901 p=25320 u=lixun n=ansible | PLAY [me] *************************************************************************************************************************************************
+2024-06-06 20:41:33,904 p=25320 u=lixun n=ansible | TASK [Gathering Facts] ************************************************************************************************************************************
+2024-06-06 20:41:37,886 p=25320 u=lixun n=ansible | ok: [47.121.139.55]
+2024-06-06 20:41:37,897 p=25320 u=lixun n=ansible | TASK [install httpd package] ******************************************************************************************************************************
+2024-06-06 20:41:39,791 p=25320 u=lixun n=ansible | ok: [47.121.139.55]
+2024-06-06 20:41:39,798 p=25320 u=lixun n=ansible | TASK [install vsftpd package] *****************************************************************************************************************************
+2024-06-06 20:41:41,721 p=25320 u=lixun n=ansible | ok: [47.121.139.55]
+2024-06-06 20:41:41,727 p=25320 u=lixun n=ansible | TASK [start service] **************************************************************************************************************************************
+2024-06-06 20:41:41,743 p=25320 u=lixun n=ansible | fatal: [47.121.139.55]: FAILED! => {"msg": "The task includes an option with an undefined variable. The error was: 'pkgname' is undefined. 'pkgname' is undefined\n\nThe error appears to be in '/Users/lixun/ansible/httpd_init.yaml': line 14, column 7, but may\nbe elsewhere in the file depending on the exact syntax problem.\n\nThe offending line appears to be:\n\n      yum: name={{ pkname2 }}\n    - name: start service\n      ^ here\n"}
+2024-06-06 20:41:41,744 p=25320 u=lixun n=ansible | PLAY RECAP ************************************************************************************************************************************************
+2024-06-06 20:41:41,744 p=25320 u=lixun n=ansible | 47.121.139.55              : ok=3    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   

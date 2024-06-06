@@ -2,9 +2,14 @@
 - hosts: me
   remote_user: root
 
-  tasks:
-    - name: install {{ pkgname }} package
-      yum: name={{ pkgname }}
+  vars:
+    - pkname1: httpd
+    - pkname2: vsftpd
 
+  tasks:
+    - name: install {{ pkname1 }} package
+      yum: name={{ pkname1 }}
+    - name: install {{ pkname2 }} package
+      yum: name={{ pkname2 }}
     - name: start service
       service: name={{ pkgname }} state=started enabled=yes
