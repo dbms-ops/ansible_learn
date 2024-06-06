@@ -1,3 +1,7 @@
 [me]
 47.121.139.55 host_name=lixun1
 
+[me:vars]
+node=www
+domainname=lixun1.com
+http_port=80
