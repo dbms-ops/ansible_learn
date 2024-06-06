@@ -2,10 +2,6 @@
 - hosts: me
   remote_user: root
 
-  vars:
-    - pkname1: httpd
-    - pkname2: vsftpd
-
   tasks:
     - name: install {{ pkname1 }} package
       yum: name={{ pkname1 }}

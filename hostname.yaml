@@ -1,0 +1,6 @@
+- hosts: me
+  remote_user: root
+
+  tasks:
+    - name: set hostname
+      hostname: name=www.{{host_name}}.lixun.com
