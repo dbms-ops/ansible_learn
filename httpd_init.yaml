@@ -3,16 +3,8 @@
   remote_user: root
 
   tasks:
-    - name: install httpd package
-      yum: name=httpd
-      tags: httpd
-    - name: copy conf file
-      copy: src=httpd.conf dest=/etc/httpd/conf/ backup=yes
-      notify: restart service
-    - name: start service
-      service: name=httpd state=started enabled=yes
-      tags: httpd
+    - name: install {{ pkgname }} package
+      yum: name={{ pkgname }}
 
-  handlers:
-    - name: restart service
-      service: name=httpd state=restarted
+    - name: start service
+      service: name={{ pkgname }} state=started enabled=yes
