@@ -5,13 +5,13 @@
   tasks:
     - name: install httpd package
       yum: name=httpd
-      tags: install httpd
+      tags: httpd
     - name: copy conf file
       copy: src=httpd.conf dest=/etc/httpd/conf/ backup=yes
       notify: restart service
     - name: start service
       service: name=httpd state=started enabled=yes
-      tags: startedhttpd
+      tags: httpd
 
   handlers:
     - name: restart service
