@@ -1,0 +1,7 @@
+---
+- hosts: me
+  remote_user: root
+
+  tasks:
+    - name: create log file
+      file: name=/data/{{ ansible_fqdn }}.log state=touch mode=600 owner=root
