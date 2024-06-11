@@ -1,0 +1,21 @@
+---
+- hosts: me
+  remote_user: root
+
+  tasks:
+    - name: create some file
+      when: ansible_distribution_major_version == "7"
+      file: name=/data/{{ item }} state=touch
+
+      with_items:
+        - file1
+        - file2
+        - file3
+    - name: install some packages
+      yum: name={{ item }}
+
+      with_items:
+        - htop
+        - tree
+        - sl
+        - hping3

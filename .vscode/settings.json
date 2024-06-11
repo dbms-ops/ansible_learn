@@ -5,10 +5,12 @@
             "file:///Users/lixun/ansible/test_vars.yaml",
             "file:///Users/lixun/ansible/set_hostname.yaml",
             "file:///Users/lixun/ansible/playbook/test_template.yaml",
-            "file:///Users/lixun/ansible/test_template.yaml"
+            "file:///Users/lixun/ansible/test_template.yaml",
+            "file:///Users/lixun/ansible/iter_file.yaml"
         ]
     },
     "cSpell.words": [
+        "hping",
         "pkgname"
     ]
 }

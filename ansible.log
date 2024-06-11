@@ -5581,3 +5581,51 @@ nginx    32457  0.0  0.0  39700  1556 ?        S    17:04   0:00 nginx: worker p
 2024-06-11 17:31:27,620 p=48395 u=lixun n=ansible | ok: [47.121.139.55]
 2024-06-11 17:31:27,635 p=48395 u=lixun n=ansible | PLAY RECAP ***************************************************************************************************************************************************************************
 2024-06-11 17:31:27,635 p=48395 u=lixun n=ansible | 47.121.139.55              : ok=4    changed=0    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+2024-06-11 17:39:07,538 p=48732 u=lixun n=ansible | PLAY [me] ****************************************************************************************************************************************************************************
+2024-06-11 17:39:07,543 p=48732 u=lixun n=ansible | TASK [Gathering Facts] ***************************************************************************************************************************************************************
+2024-06-11 17:39:11,666 p=48732 u=lixun n=ansible | ok: [47.121.139.55]
+2024-06-11 17:39:11,675 p=48732 u=lixun n=ansible | TASK [create some file] **************************************************************************************************************************************************************
+2024-06-11 17:39:13,193 p=48732 u=lixun n=ansible | failed: [47.121.139.55] (item=file1) => {"ansible_loop_var": "item", "changed": false, "item": "file1", "msg": "Unsupported parameters for (file) module: status. Supported parameters include: _diff_peek, _original_basename, access_time, access_time_format, attributes, follow, force, group, mode, modification_time, modification_time_format, owner, path, recurse, selevel, serole, setype, seuser, src, state, unsafe_writes (attr, dest, name)."}
+2024-06-11 17:39:14,804 p=48732 u=lixun n=ansible | failed: [47.121.139.55] (item=file2) => {"ansible_loop_var": "item", "changed": false, "item": "file2", "msg": "Unsupported parameters for (file) module: status. Supported parameters include: _diff_peek, _original_basename, access_time, access_time_format, attributes, follow, force, group, mode, modification_time, modification_time_format, owner, path, recurse, selevel, serole, setype, seuser, src, state, unsafe_writes (attr, dest, name)."}
+2024-06-11 17:39:16,180 p=48732 u=lixun n=ansible | failed: [47.121.139.55] (item=file3) => {"ansible_loop_var": "item", "changed": false, "item": "file3", "msg": "Unsupported parameters for (file) module: status. Supported parameters include: _diff_peek, _original_basename, access_time, access_time_format, attributes, follow, force, group, mode, modification_time, modification_time_format, owner, path, recurse, selevel, serole, setype, seuser, src, state, unsafe_writes (attr, dest, name)."}
+2024-06-11 17:39:16,187 p=48732 u=lixun n=ansible | PLAY RECAP ***************************************************************************************************************************************************************************
+2024-06-11 17:39:16,187 p=48732 u=lixun n=ansible | 47.121.139.55              : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2024-06-11 17:40:35,736 p=48792 u=lixun n=ansible | PLAY [me] ****************************************************************************************************************************************************************************
+2024-06-11 17:40:35,740 p=48792 u=lixun n=ansible | TASK [Gathering Facts] ***************************************************************************************************************************************************************
+2024-06-11 17:40:41,020 p=48792 u=lixun n=ansible | ok: [47.121.139.55]
+2024-06-11 17:40:41,028 p=48792 u=lixun n=ansible | TASK [create some file] **************************************************************************************************************************************************************
+2024-06-11 17:40:43,768 p=48792 u=lixun n=ansible | changed: [47.121.139.55] => (item=file1)
+2024-06-11 17:40:45,142 p=48792 u=lixun n=ansible | changed: [47.121.139.55] => (item=file2)
+2024-06-11 17:40:46,535 p=48792 u=lixun n=ansible | changed: [47.121.139.55] => (item=file3)
+2024-06-11 17:40:46,549 p=48792 u=lixun n=ansible | TASK [install some packages] *********************************************************************************************************************************************************
+2024-06-11 17:40:46,565 p=48792 u=lixun n=ansible | fatal: [47.121.139.55]: FAILED! => {"msg": "invalid or malformed argument: 'htop'"}
+2024-06-11 17:40:46,566 p=48792 u=lixun n=ansible | PLAY RECAP ***************************************************************************************************************************************************************************
+2024-06-11 17:40:46,566 p=48792 u=lixun n=ansible | 47.121.139.55              : ok=2    changed=1    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2024-06-11 17:41:02,452 p=48846 u=lixun n=ansible | PLAY [me] ****************************************************************************************************************************************************************************
+2024-06-11 17:41:02,456 p=48846 u=lixun n=ansible | TASK [Gathering Facts] ***************************************************************************************************************************************************************
+2024-06-11 17:41:05,896 p=48846 u=lixun n=ansible | ok: [47.121.139.55]
+2024-06-11 17:41:05,902 p=48846 u=lixun n=ansible | TASK [create some file] **************************************************************************************************************************************************************
+2024-06-11 17:41:07,537 p=48846 u=lixun n=ansible | changed: [47.121.139.55] => (item=file1)
+2024-06-11 17:41:08,936 p=48846 u=lixun n=ansible | changed: [47.121.139.55] => (item=file2)
+2024-06-11 17:41:11,684 p=48846 u=lixun n=ansible | changed: [47.121.139.55] => (item=file3)
+2024-06-11 17:41:11,694 p=48846 u=lixun n=ansible | TASK [install some packages] *********************************************************************************************************************************************************
+2024-06-11 17:41:13,755 p=48846 u=lixun n=ansible | changed: [47.121.139.55] => (item=htop)
+2024-06-11 17:41:15,702 p=48846 u=lixun n=ansible | changed: [47.121.139.55] => (item=tree)
+2024-06-11 17:41:18,565 p=48846 u=lixun n=ansible | changed: [47.121.139.55] => (item=sl)
+2024-06-11 17:41:20,508 p=48846 u=lixun n=ansible | changed: [47.121.139.55] => (item=hping3)
+2024-06-11 17:41:20,524 p=48846 u=lixun n=ansible | PLAY RECAP ***************************************************************************************************************************************************************************
+2024-06-11 17:41:20,524 p=48846 u=lixun n=ansible | 47.121.139.55              : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2024-06-11 17:41:51,916 p=48957 u=lixun n=ansible | PLAY [me] ****************************************************************************************************************************************************************************
+2024-06-11 17:41:51,918 p=48957 u=lixun n=ansible | TASK [Gathering Facts] ***************************************************************************************************************************************************************
+2024-06-11 17:41:55,089 p=48957 u=lixun n=ansible | ok: [47.121.139.55]
+2024-06-11 17:41:55,096 p=48957 u=lixun n=ansible | TASK [create some file] **************************************************************************************************************************************************************
+2024-06-11 17:41:56,539 p=48957 u=lixun n=ansible | changed: [47.121.139.55] => (item=file1)
+2024-06-11 17:41:57,945 p=48957 u=lixun n=ansible | changed: [47.121.139.55] => (item=file2)
+2024-06-11 17:42:00,275 p=48957 u=lixun n=ansible | changed: [47.121.139.55] => (item=file3)
+2024-06-11 17:42:00,285 p=48957 u=lixun n=ansible | TASK [install some packages] *********************************************************************************************************************************************************
+2024-06-11 17:42:05,058 p=48957 u=lixun n=ansible | changed: [47.121.139.55] => (item=htop)
+2024-06-11 17:42:09,432 p=48957 u=lixun n=ansible | changed: [47.121.139.55] => (item=tree)
+2024-06-11 17:42:13,858 p=48957 u=lixun n=ansible | changed: [47.121.139.55] => (item=sl)
+2024-06-11 17:42:19,350 p=48957 u=lixun n=ansible | changed: [47.121.139.55] => (item=hping3)
+2024-06-11 17:42:19,366 p=48957 u=lixun n=ansible | PLAY RECAP ***************************************************************************************************************************************************************************
+2024-06-11 17:42:19,366 p=48957 u=lixun n=ansible | 47.121.139.55              : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
