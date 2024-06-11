@@ -5,8 +5,13 @@
   tasks:
     - name: install package
       yum: name=nginx
-    - name: copy template
+    - name: copy template for redhat 7
       template: src=template/nginx.conf.j2 dest=/etc/nginx/nginx.conf
+      when: ansible_distribution_major_version == "7"
+      notify: restart nginx
+    - name: copy template for redhat 6
+      template: src=template/nginx.conf.j2 dest=/etc/nginx/nginx.conf
+      when: ansible_distribution_major_version == "6"
       notify: restart nginx
     - name: start nginx
       service: name=nginx state=started enabled=yes
