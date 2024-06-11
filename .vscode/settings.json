@@ -1,6 +1,9 @@
 {
     "yaml.schemas": {
-        "https://raw.githubusercontent.com/ansible/ansible-lint/main/src/ansiblelint/schemas/ansible.json#/$defs/playbook": "file:///Users/lixun/ansible/httpd_init.yaml"
+        "https://raw.githubusercontent.com/ansible/ansible-lint/main/src/ansiblelint/schemas/ansible.json#/$defs/playbook": [
+            "file:///Users/lixun/ansible/httpd_init.yaml",
+            "file:///Users/lixun/ansible/test_vars.yaml"
+        ]
     },
     "cSpell.words": [
         "pkgname"

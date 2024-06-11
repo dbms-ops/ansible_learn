@@ -1,0 +1,11 @@
+---
+- hosts: me
+  remote_user: root
+  vars_files:
+    - vars.yaml
+
+  tasks:
+    - name: install package
+      yum: name={{ var1 }}
+    - name: create file
+      file: name=/data/{{ var2 }}.log state=touch
